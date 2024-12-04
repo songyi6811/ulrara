@@ -24,6 +24,12 @@ body {
     color: #333;
     font-family: 'Pretendard';
 }
+h2{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'BookkMyungjo-Bd';
+}
 
 /* header */
 header {
@@ -334,10 +340,12 @@ header .notice a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 .category .inner .item .text p{
     font-size: 18px;
     margin-bottom: 30px;
+    line-height: 25px;
 }
 .category .inner .item .text a{
     width: 150px;
@@ -345,4 +353,41 @@ header .notice a {
     border: 1px solid #fff;
     text-align: center;
     line-height: 50px;
+}
+.category .inner .item:hover .text{
+    opacity: 1;
+    transition: 0.5s;
+}
+.category .inner .item:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #0000005e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* .lookbook */
+.lookbook {
+    width: 100%;
+    margin-bottom: 150px;
+}
+.lookbook .title{
+    width: 100%;
+    text-align: center;
+}
+.lookbook .title h2{
+    margin-bottom: 10px;
+}
+.lookbook .title p{
+    margin-bottom: 50px;
+}
+.lookbook_slide{
+    width:100%;
+}
+.lookbook_slide img{
+    width: 100%;
 }
