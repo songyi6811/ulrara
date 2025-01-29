@@ -427,8 +427,8 @@ header .notice a {
 }
 .lookbook_slide .swiper-slide.swiper-slide-active{
     transform: scale(1.2);
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .lookbook_slide .swiper-slide{
     transform: scale(0.8);
